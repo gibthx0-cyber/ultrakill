@@ -1,0 +1,8 @@
+html, body { margin: 0; height: 100%; background: #0b0b0b; }
+#game { width: 100vw; height: 100vh; display: block; outline: none; }
+#hud { position: fixed; inset: 0; pointer-events: none; font: 700 14px/1.2 "Consolas", monospace; color: #e6e6e6; }
+.meter { position: absolute; left: 16px; bottom: 16px; background: rgba(0,0,0,0.35); padding: 8px 10px; border: 2px solid #e6e6e6; }
+.meter + .meter { bottom: 60px; }
+.crosshair { position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); font-size: 20px; color: #e6e6e6; text-shadow: 0 0 6px #fff; }
+.speedlines { position: fixed; inset: 0; background: radial-gradient(transparent, rgba(255,255,255,0.03)); mix-blend-mode: screen; opacity: 0; transition: opacity 120ms linear; }
+main.js (minimal FPS loop)
